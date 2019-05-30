@@ -1,3 +1,20 @@
+/*BODY*/
+body{
+	background-color: #180A00;
+	color: white;
+}
+	/*LINKS*/
+	a.link{
+		color: red;
+		text-decoration: none;
+	}
+
+	a:hover{
+		color: white;
+	}
+	
+
+/*HEADER*/
 header, footer{
 	margin: 10px;
 	background: #793A0D;
@@ -5,19 +22,36 @@ header, footer{
 	border-radius: 5px;
 }
 
-.form{
-	border: 5px;
-	margin: 10px;
-	border-radius: 5px;
+	#capivara{
+		width: 300px;
+	}
+
+/*CONTEUDO*/
+.flex{
+	display: flex;
+	justify-content: space-between;
 }
 
-a.link{
-	color: red;
-	text-decoration: none;
-}
-a:hover{
-	color: white;
-}
+	.lista, .treinamento, .tabela{
+		flex-grow: 1;
+		margin: 10px;
+		border: 5px solid white;
+		background: #793A0D;
+		border-radius: 5px;
+	}
+	
+	.teste:hover{
+				background: white;
+				color: #793A0D;
+				transition: background, color 1000ms ease;
+			}
+
+		td, th{
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+
+			
 
 .box{
 	position: relative;
@@ -28,68 +62,43 @@ a:hover{
 	border-radius: 5px;
 }
 
-@keyframes spining {
-	100%{
-		transform: rotate(360deg);
+
+	#capivara2{
+		width: 80%;
+		height: 90%;
+		position: absolute;
+		left: 10%;
+		top: 5%;
+		bottom: 5%
 	}
-}
 
-#capivara2:hover{
-	animation: spining 1000ms linear;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
+		@keyframes spining {
+			100%{
+				transform: rotate(360deg);
+			}
+		}
 
-#capivara2{
-	width: 80%;
-	height: 90%;
-	position: absolute;
-	left: 10%;
-	top: 5%;
-	bottom: 5%
-}
+		#capivara2:hover{
+			animation: spining 1000ms linear;
+		    animation-fill-mode: forwards;
+		    animation-iteration-count: infinite;
+		}
 
+/*FOOTER*/
 .sugest{
 	display: flex;
 	justify-content: center;
-}
-.sugestao{
-	width: 300px;
-	padding: 10px;
-	border: 5px;
-	border-radius: 5px;
-}
+	}
+	.form{
+		border: 5px;
+		margin: 10px;
+		border-radius: 5px;
+	}
 
-.flex{
-	margin: 10px;
-	display: flex;
-	justify-content: space-between;
-}
+		.sugestao{
+			width: 300px;
+			padding: 10px;
+			border: 5px;
+			border-radius: 5px;
+		}
 
-
-.lista, .treinamento, .tabela{
-	flex-grow: 1;
-	margin: 10px;
-	border: 5px solid white;
-	background: #793A0D;
-	border-radius: 5px;
-}
-
-.teste:hover{
-	background: white;
-	color: #793A0D;
-	transition: background, color 1000ms ease;
-}
-body{
-	background-color: #180A00;
-	color: white;
-}
-
-#capivara{
-	width: 300px;
-}
-
-td, th{
-	border: 1px solid black;
-	border-radius: 5px;
-}
